@@ -18,6 +18,7 @@ public class base_test implements framework_constant
 	{
 		System.setProperty(gecko_key,gecko_value);
 		driver= new FirefoxDriver();
+		//for launching the browser
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
